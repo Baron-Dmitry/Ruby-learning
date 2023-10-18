@@ -2,7 +2,7 @@
 
 members = ['holy', 'de@th knight', 'v0va']
 
-members.each.with_index do |_member, _current_index|
-  puts members
-  puts index
+members.each.with_index do |member, current_index|
+  puts member
+  puts current_index
 end

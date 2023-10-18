@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 data = {
   РФ: 'Москва',
   Китай: 'Пекин',
@@ -8,12 +10,12 @@ data = {
 }
 
 data.each do |country, capital|
-    puts "country is #{country}"
+  puts "country is #{country}"
   user_input = gets.strip.downcase
   if user_input == capital.downcase
-      puts 'great'
+    puts 'great'
   else
     puts 'incorrect'
-    puts    "correct capital is #{capital}"
+    puts "correct capital is #{capital}"
   end
 end

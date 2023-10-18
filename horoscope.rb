@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'faraday'
 require 'json'
 
@@ -6,8 +8,8 @@ url = 'https://api.twitter.com/2/users/1340584098075717635/tweets'
 
 response = Faraday.get(
   url,
-  {max_results: 12},
-  { "Authorization" => "Bearer #{token}" }
+  { max_results: 12 },
+  { 'Authorization' => "Bearer #{token}" }
 )
 
 raw_tweets = JSON.parse(response.body)

@@ -14,8 +14,6 @@ jokes = [
   'Chuck Norris plays Russian roulette with a fully loaded revolver... and wins.'
 ]
 
-puts jokes.sample
-
 random_joke = rand(0...jokes.length)
 puts jokes[random_joke]
 
